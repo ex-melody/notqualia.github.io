@@ -1,5 +1,5 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Site of Qualia'
+title = 'Site Of Qualia'
 theme = "ananke"
 publishDir = "docs"
