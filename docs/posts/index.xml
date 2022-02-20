@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Site of Qualia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Feb 2022 13:13:00 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 07:23:08 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>unirest使用%2b在get请求内代替&#43;号不生效</title>
+      <link>http://example.org/posts/unirest%E4%BD%BF%E7%94%A8&#43;%E4%BB%A3%E6%9B%BF&#43;%E4%B8%8D%E7%94%9F%E6%95%88/</link>
+      <pubDate>Sun, 20 Feb 2022 07:23:08 +0800</pubDate>
+      
+      <guid>http://example.org/posts/unirest%E4%BD%BF%E7%94%A8&#43;%E4%BB%A3%E6%9B%BF&#43;%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
+      <description>https://github.com/Kong/unirest-java/issues/428
+公司业务需要在get请求里发送+号，网上查了下+号的转义字符是%2b，结果平台返回%2b不符合格式。
+问了下作者以后，用了下面这段代码做测试
+String body = Unirest.get(&amp;quot;https://httpbin.org/get?date=2022-01-09T16:05:41.041%2b08:00&amp;quot;) .asString() .getBody();  发现unirest自动把%2b里的%转成了%25,%25是%的转义字符，也就是说平台那边解析完了以后又变成了原原本本的%2b。 看了眼github,最新的unirest的包名是com.konghq，公司内部用的包名还是com.mashape.unirest，大概差了好几年的版本号， 公司项目换了新版本以后就没事了。</description>
+    </item>
+    
     <item>
       <title>Steam启动参数语言环境变量设置</title>
       <link>http://example.org/posts/steam%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE/</link>
@@ -23,15 +35,6 @@
       <pubDate>Sat, 19 Feb 2022 05:25:08 +0800</pubDate>
       
       <guid>http://example.org/posts/my-first-post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/posts/unirest%E4%BD%BF%E7%94%A8&#43;%E4%BB%A3%E6%9B%BF&#43;%E4%B8%8D%E7%94%9F%E6%95%88/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/unirest%E4%BD%BF%E7%94%A8&#43;%E4%BB%A3%E6%9B%BF&#43;%E4%B8%8D%E7%94%9F%E6%95%88/</guid>
       <description></description>
     </item>
     
