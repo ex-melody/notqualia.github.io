@@ -14,6 +14,8 @@
     <loc>http://example.org/posts/my-first-post/</loc>
     <lastmod>2022-02-19T05:25:08+08:00</lastmod>
   </url><url>
+    <loc>http://example.org/posts/unirest%E4%BD%BF%E7%94%A8&#43;%E4%BB%A3%E6%9B%BF&#43;%E4%B8%8D%E7%94%9F%E6%95%88/</loc>
+  </url><url>
     <loc>http://example.org/categories/</loc>
   </url><url>
     <loc>http://example.org/tags/</loc>
